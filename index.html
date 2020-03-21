@@ -9,42 +9,44 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="style.css">
   <title>Ipse</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a href="index.html" class="navbar-brand">Ipse</a>
+<body class="text-secondary">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a href="index.html" class="navbar-brand text-secondary">
+      <img src="./assets/logo_ipse.png" alt="Logo Ipse">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="navbar-nav mr-auto">
+      <div class="navbar-nav ml-auto">
         <a href="index.html" class="nav-item nav-link" active>Strona domowa</a>
-        <a href="#" class="nav-item nav-link">O nas</a>
-        <a href="#" class="nav-item nav-link">Oferta</a>
-        <a href="#" class="nav-item nav-link">Blog</a>
-        <a href="#" class="nav-item nav-link">Kontakt</a>
+        <a href="#about" class="nav-item nav-link">O nas</a>
+        <a href="#offert" class="nav-item nav-link">Oferta</a>
+        <a href="blog.html" class="nav-item nav-link">Blog</a>
+        <a href="#contact" class="nav-item nav-link">Kontakt</a>
       </div>
     </div>
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <p class="my-3 lead text-justify">IPSE to miejsce, gdzie jesteś w centrum. Tutaj koncentrujemy się na
-          indywidualności i szanujemy autonomię. IPSE to przestrzeń do spotkań, gdzie chcemy wspierać i dzielić się
+      <div class="col-12 mb-3">
+        <p class="my-5 lead text-justify">Ipse to miejsce, gdzie jesteś w centrum. Tutaj koncentrujemy się na
+          indywidualności i szanujemy autonomię. Ipse to przestrzeń do spotkań, gdzie chcemy wspierać i dzielić się
           wiedzą. To miejsce dialogu i dyskusji.</p>
-        <img class="img-fluid" src="./assets/grow_hands.jpg" alt="Rosnąca roślina na dłoni">
+        <img class="img-fluid " src="./assets/grow_hands_light.jpg" alt="Rosnąca roślina na dłoni">
       </div>
 
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-12">
-          <h2 class="mt-5">Nasza oferta</h2>
+          <h2>Nasza oferta</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-md-6 col-sm-12">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Poradnictwo psychologiczne</li>
@@ -64,66 +66,158 @@
     </div>
 
     <div class="row">
-      <div class="col-12">
-        <div class="jumbotron my-3">
-          <p class="lead">Więcej informacji o tym jak pracujemy, znajdziesz na naszym blogu.</p>
-          <a href="#" class="btn btn-lg btn-secondary" type="button">Zobacz Blog</a>
+      <div class="col-sm-12 bg-light">
+        <div class="card border-0 bg-light">
+          <div class="card-body">
+            <p class="card-text text-center text-secondary"><i class="fas fa-blog fa-3x"></i></p>
+            <p class=" card-text lead text-center text-secondary">Więcej informacji o tym jak pracujemy, znajdziesz na
+              naszym blogu.</p>
+            <p class="card-text text-center">
+              <a href="#" class="btn btn-lg btn-secondary" type="button">Zobacz Blog</a>
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="row">
+    <div id="about" class="row mt-5">
       <div class="col-12">
-        <h2 class="mt-2">O nas</h2>
+        <h2>O nas</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-6">
-        <div class="card border-0">
-          <img class="card-img-top" src="./assets/psychology.png" alt="Aleksandra W">
+    <div class="row justify-content-around">
+      <div class="col-sm-12 col-md-4">
+        <div class="card border-0 p-3">
+          <img class="card-img-top" src="./assets/aleksandra.jpg" alt="Aleksandra W">
           <div class="card-body">
-            <h3 class="card-title">Ola</h3>
-            <a href="#" class="btn btn-secondary">Więcej</a>
+            <h3 class="card-title">Aleksandra Wardach</h3>
+            <p class="card-text">psycholog</p>
+            <a href="#" class="btn btn-secondary card-link">Więcej</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6">
-        <div class="card border-0">
-          <img class="card-img-top" src="./assets/psychology.png" alt="Kamil W">
+      <div class="col-sm-12 col-md-4">
+        <div class="card border-0 p-3">
+          <img class="card-img-top rounded" src="./assets/kamil.jpg" alt="Kamil W">
           <div class="card-body">
-            <h3 class="card-title">Kamil</h3>
-            <a href="#" class="btn btn-secondary">Więcej</a>
+            <h3 class="card-title">Kamil Wardach</h3>
+            <p class="card-text">psycholog</p>
+            <a href="#" class="btn btn-secondary card-link">Więcej</a>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Czas</th>
-              <th scope="col">Cena</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+    <div class="row" id="offert">
+      <div class="col-12 bg-light my-5">
+        <h2 class="display-5 mt-4">Cennik</h2>
+        <div class="table-responsive-sm">
+          <table class="table table-borderless table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Rodzaj wizyty</th>
+                <th scope="col">Czas</th>
+                <th scope="col">Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Konsultacja</td>
+                <td>50 min.</td>
+                <td>100zł</td>
+              </tr>
+              <tr>
+                <td>Konsultacja psychologiczna dla dzieci i młodzieży</td>
+                <td>50 min.</td>
+                <td>100zł</td>
+              </tr>
+              <tr>
+                <td>Konsultacja zachowań niepożądanych w oparciu o stosowanę analizę zachowania</td>
+                <td>50 min.</td>
+                <td>120zł</td>
+              </tr>
+              <tr>
+                <td>Porada psychologiczna</td>
+                <td>30/50 min.</td>
+                <td>50/100zł</td>
+              </tr>
+              <tr>
+                <td>Pomoc psychologiczna</td>
+                <td>50 min.</td>
+                <td>100zł</td>
+              </tr>
+              <tr>
+                <td>Konsultacja rodzicielska</td>
+                <td>50 min.</td>
+                <td>100zł</td>
+              </tr>
+              <tr>
+                <td>Indywidualny trening środowiskowy/umiejętności praktycznych</td>
+                <td>90 min.</td>
+                <td>120zł</td>
+              </tr>
+              <tr>
+                <td>Grupowy trening środowiskowy/umiejętności praktycznych</td>
+                <td>90 min.</td>
+                <td>50zł/os.</td>
+              </tr>
+              <tr>
+                <td>Treningi umiejętności społecznych</td>
+                <td>90 min.</td>
+                <td>70zł/os.</td>
+              </tr>
+              <tr>
+                <td colspan="3">Spersonalizowany warsztat/szkolenie – warunki ustalane indywidualnie</td>
+              </tr>
+              <tr>
+                <td colspan="2">Program rozwoju, obejmuje spotkanie wstępne z rodzicami (1h), spotkanie w domu dziecka
+                  (2h), sporządzenie zaleceń</td>
+                <td>650zł</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small">
+          * Obecnie świadczymy usługi za pośrednictwem telefonu lub aplikacji Skype.
+          <br>
+          ** Do 25 marca obowiązuje zniżka 50% na usługi: konsultacja, poradnictwo psychologiczne, pomoc psychologiczna
+        </p>
       </div>
     </div>
 
-    <h1>tabela z ofertą</h1>
+    <div class="row bg-light">
+      <div class="col-sm-12">
+        <div id="contact" class="card border-0 bg-light">
+          <div class="card-body">
+            <p class="card-text text-center text-secondary"><i class="far fa-envelope fa-3x"></i></p>
+            <p class="text-center lead"><a class="text-secondary"
+                href="mailto:ipse.kontakt@gmail.com">ipse.kontakt@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h1>kontakt</h1>
+    <div class="row mt-5">
+      <div class="col">
+        <hr>
+      </div>
+    </div>
 
-    <h1>footer</h1>
+
+
+    <footer class="row">
+      <div class="col">
+        <p class="text-secodary text-center small">Wszystkie prawa zastrzeżone</p>
+      </div>
+    </footer>
 
 
   </div>
 
   <!-- Optional JavaScript -->
+  <script src="https://kit.fontawesome.com/838c88d0f0.js" crossorigin="anonymous"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -134,6 +228,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
